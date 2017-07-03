@@ -1,7 +1,26 @@
 {
 	"name": "app.ui.header",
 	"version": "0.0.1",
+	"author": "makesites",
+	"authors": [
+		"Makis Tracend <makis@makesit.es>"
+	],
+	"description": "Intelligent header for your APP",
+	"keywords": [
+		"header",
+		"app-ui",
+		"ui",
+		"component",
+		"web-components"
+	],
+	"license": "MIT",
+	"repository" : "http://github.com/app-ui/header",
 	"main": ["./assets/js/app.ui.header-min.js"],
+	"ignore": [
+		"bower_components",
+		"components",
+		"node_modules"
+	],
 	"dependencies": {
 		"underscore" : "1.8.3",
 		"jquery" : ">2.0.0"
