@@ -14,7 +14,7 @@ bower install app.ui.header
 
 ## Credits
 
-Initiated by Makis Tracend
+Initiated by [Makis Tracend](http://github.com/tracend)
 
 Based on [Backbone.UI.Header](https://github.com/backbone-ui/header) by [Lyndel Thomas](http://github.com/ryndel)
 
