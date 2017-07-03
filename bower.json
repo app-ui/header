@@ -1,0 +1,9 @@
+{
+	"name": "app.ui.header",
+	"version": "0.0.1",
+	"main": ["./assets/js/app.ui.header-min.js"],
+	"dependencies": {
+		"underscore" : "1.8.3",
+		"jquery" : ">2.0.0"
+	}
+}
