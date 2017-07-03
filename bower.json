@@ -19,7 +19,8 @@
 	"ignore": [
 		"bower_components",
 		"components",
-		"node_modules"
+		"node_modules",
+		"assets/js/lib"
 	],
 	"dependencies": {
 		"underscore" : "1.8.3",
