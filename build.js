@@ -42,7 +42,8 @@ var src = [
 	// third-party helpers
 
 	// main lib
-	'assets/js/lib/view.js',
+	'assets/js/lib/shims.js',
+	'assets/js/lib/view.js'
 ];
 
 // - concatinate all files
