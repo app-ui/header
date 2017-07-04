@@ -1,4 +1,4 @@
-header {
+.ui-header {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -15,7 +15,7 @@ header {
 	transition: transform .5s .5s,background .5s,color .1s;
 }
 
-header.detatch {
+.ui-header.detatched {
 	position: fixed;
 	-webkit-transition: -webkit-transform .1s,background .1s,color .1s;
 	-moz-transition: -moz-transform .1s,background .1s,color .1s;
@@ -23,7 +23,7 @@ header.detatch {
 	transition: transform .1s,background .1s,color .1s;
 }
 
-header.ui-header-hide {
+.ui-header.hidden {
 	opacity: 0;
 	-webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
 	-moz-transition: -moz-transform .2s,background .3s,color .3s,opacity 0 .3s;
@@ -31,10 +31,10 @@ header.ui-header-hide {
 	transition: transform .2s,background .3s,color .3s,opacity 0 .3s;
 }
 
-header.visible {
+.ui-header.visible {
 	opacity: 1;
 	-webkit-transition: -webkit-transform .2s,background .3s,color .3s;
 	-moz-transition: -moz-transform .2s,background .3s,color .3s;
 	-o-transition: -o-transform .2s,background .3s,color .3s;
-	transition: transform .2s,background .3s,color .3s; 
+	transition: transform .2s,background .3s,color .3s;
 }
