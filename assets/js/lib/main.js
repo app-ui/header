@@ -26,26 +26,21 @@
 	}
 }(function ( $, _ ) {
 
-	APP = APP || window.APP || null;
-	var isAPP = ( APP !== null );
+	// If there is a window object, that at least has a document property
+	var isBrowser = ( typeof window === "object" && typeof window.document === "object" );
+	var APP = ( isBrowser && window.APP ) ? window.APP : {}; //
 	// support for APP() view if available...
-	var View = ( isAPP && typeof APP.View !== "undefined" ) ? APP.View : Object;
+	var View = ( typeof APP.View !== "undefined" ) ? APP.View : null;
 
 
 {{{lib}}}
 
-	if( isAPP ){
-		APP.UI = APP.UI || {};
-		APP.UI.Header = Header;
-	}
 
-	// If there is a window object, that at least has a document property
-	if( typeof window === "object" && typeof window.document === "object" ){
-		// update APP namespace
-		if( isAPP ){
-			window.APP = APP;
-		}
-	}
+	// Global namespace
+	APP.UI = APP.UI || {};
+	APP.UI.Header = Header;
+
+	if( isBrowser ) window.APP = APP;
 
 	// for module loaders:
 	return Header;
