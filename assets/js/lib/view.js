@@ -61,6 +61,10 @@ var Header = View.extend({
 					this.translateTop();
 				}
 			}
+		} else if( $(this.el).hasClass("hidden") ) {
+			//
+			$(this.el).removeClass("hidden");
+			this.translateTop();
 		}
 
 		// if plugin option detatch is true
