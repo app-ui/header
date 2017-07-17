@@ -59,6 +59,8 @@ if( !View ){
 		// custom constructor
 		if(this.initialize) this.initialize( options );
 	};
-	View.prototype.render = function(){};
+	View.prototype.render = function(){
+		this.postRender();
+	};
 	View.extend = extend;
 }
