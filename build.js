@@ -99,12 +99,9 @@ function minify(srcPath, distPath) {
 	ast = pro.ast_squeeze(ast);
 	*/
 
-	var result = uglify.minify(srcPath, {
-		mangle: true,
-		output: {
-			comments : /@name|@author|@cc_on|@url|@license/
-		}
-	});
+	var result = uglify.minify( fs.readFileSync(srcPath, FILE_ENCODING), { output: {
+		comments : 'some'
+	} });
 
 	// disable gzip
 	return fs.writeFileSync(distPath, result.code, FILE_ENCODING);
